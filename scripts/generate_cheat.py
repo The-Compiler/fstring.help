@@ -3,9 +3,9 @@ from pathlib import Path
 
 import markdown
 
-template = Path("quick_template.html")
-md_path = Path("quick.md")
-directory = Path("quick")
+template = Path("cheat_template.html")
+md_path = Path("cheat.md")
+directory = Path("cheat")
 output_path = directory / "index.html"
 
 
