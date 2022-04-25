@@ -73,7 +73,7 @@ Some format specifications are also included to show how to mix and match these 
 |          | `!r`       | `<10`       | `{expression!r:<10}` | `"'Hi! ✨'   "`    |
 | `=`      |            |             | `{expression=}`      | `"name='Trey'"`    |
 | `=`      |            |             | `{expression = }`    | `"name = 'Trey'"`  |
-| `=`      | `!s`       |             | `{expression=!s}`    | `"name=Trey"`     |
+| `=`      | `!s`       |             | `{expression=!s}`    | `"name=Trey"`      |
 | `=`      |            | `.2f`       | `{expression=:.2f}`  | `'len(name)=4.00'` |
 
 An empty conversion field is synonymous with `!s`, unless a self-documenting expression is used.
