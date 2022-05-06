@@ -24,19 +24,19 @@ These format specifications only work on all numbers (both `int` and `float`).
 
 These examples assume the following variable:
 
-    >>> number = 9
+    >>> number = 10
 
 | Example Output | Replacement Field | Alt | Fill | Width | Grouping | Type |
 |----------------|-------------------|-----|------|-------|----------|------|
-| `'09'`         | `{number:02d}`    |     | `0`  | `2`   |          | `d`  |
-| `'  9'`        | `{number: 3d}`    |     | ` `  | `3`   |          | `d`  |
-| `'9'`          | `{number:,}`      |     |      |       | `,`      |      |
-| `'1001'`       | `{number:b}`      |     |      |       |          | `b`  |
-| `'9'`          | `{number:x}`      |     |      |       |          | `x`  |
-| `'9'`          | `{number:X}`      |     |      |       |          | `X`  |
-| `'0x9'`        | `{number:#x}`     | `#` |      |       |          | `x`  |
-| `'0x9'`        | `{number:#02x}`   | `#` | `0`  | `2`   |          | `x`  |
-| `'000_1001'`   | `{number:08_b}`   |     | `0`  | `8`   | `_`      | `b`  |
+| `'0010'`       | `{number:04d}`    |     | `0`  | `4`   |          | `d`  |
+| `'  10'`       | `{number: 4d}`    |     | ` `  | `4`   |          | `d`  |
+| `'10'`         | `{number:,}`      |     |      |       | `,`      |      |
+| `'1010'`       | `{number:b}`      |     |      |       |          | `b`  |
+| `'a'`          | `{number:x}`      |     |      |       |          | `x`  |
+| `'A'`          | `{number:X}`      |     |      |       |          | `X`  |
+| `'0xa'`        | `{number:#x}`     | `#` |      |       |          | `x`  |
+| `'000a'`       | `{number:04x}`    |     | `0`  | `4`   |          | `x`  |
+| `'0000_1010'`  | `{number:09_b}`   |     | `0`  | `9`   | `_`      | `b`  |
 
 An empty type is synonymous with `d` for integers.
 
