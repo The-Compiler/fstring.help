@@ -15,9 +15,14 @@ The below examples assume the following variables:
 | `'4,125.60'`   | `{number:,.2f}`    |      |       | `,`      | `.2`      | `f`  |
 | `'04125.60'`   | `{number:08.2f}`   | `0`  | `8`   |          | `.2`      | `f`  |
 | `' 4125.60'`   | `{number: 8.2f}`   | ` `  | `8`   |          | `.2`      | `f`  |
+| `'4.1e+03'`    | `{number:.2g}`     |      |       |          | `.2`      | `g`  |
+| `'4125.6'`     | `{number:.8g}`     |      |       |          | `.8`      | `g`  |
 | `'37%'`        | `{percent:.0%}`    |      |       |          | `.0`      | `%`  |
 
 These format specifications only work on all numbers (both `int` and `float`).
+
+- Type `f` with precision `.n` displays `n` digits after the decimal point.
+- Type `g` with precision `.n` displays `n` significant digits in scientific notation. Trailing zeros are not displayed.
 
 
 ## Integers
