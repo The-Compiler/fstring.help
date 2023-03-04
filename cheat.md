@@ -72,7 +72,7 @@ Some format specifications are also included to show how to mix and match these 
 
 | Self-Doc | Conversion | Format Spec | Field                | Example Output     |
 |----------|------------|-------------|----------------------|--------------------|
-|          | `!s`       |             | `{expression!r}`     | `'Hi! ✨'`         |
+|          | `!s`       |             | `{expression!s}`     | `'Hi! ✨'`         |
 |          | `!r`       |             | `{expression!r}`     | `"'Hi! ✨'"`       |
 |          | `!a`       |             | `{expression!a}`     | `"'Hi! \\u2728'"`  |
 |          | `!r`       | `<10`       | `{expression!r:<10}` | `"'Hi! ✨'   "`    |
